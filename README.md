@@ -102,39 +102,78 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
 
+1.	Create a New Project:
 
+Open Quartus and create a new project by selecting "File" > "New Project Wizard."
+Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
+
+2.	Create a New Design File:
+
+Once the project is created, right-click on the project name in the Project Navigator and select "Add New File."
+Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
+
+3.	Write the Combinational Logic Code:
+
+Open the newly created Verilog or VHDL file and write the code for your combinational logic.
+
+4.	Compile the Project:
+
+To compile the project, click on "Processing" > "Start Compilation" in the menu.
+Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
+
+5.	Analyze and Fix Errors:
+
+If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
+Review and fix any issues in your code if necessary. View the RTL diagram.
+
+6.	Verification:
+
+Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+ 
+Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
+Give the Input Combinations according to the Truth Table amd then simulate the
+Output Waveform.
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by:  S V SHADHANASHREE
+RegisterNumber:  23013434
 */
 
-
-
-
-
+SR FLIPFLOP:
+![Alt text](srcode-2.png)
+JK FLIPFLOP:
+![Alt text](jkcode-1.png)
+D FLIPFLOP:
+![Alt text](dcode-1.png)
+T FLIPFLOP:
+![Alt text](tcode-1.png)
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
-
-
-
-
-
-
-
+SR FLIPFLOP:
+![Alt text](sr-1.png)
+JK FLIPFLOP:
+![Alt text](jk-1.png)
+D FLIPFLOP:
+![Alt text](d-1.png)
+T FLIPFLOP:
+![Alt text](t-1.png)
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
-
-
-
-
-
+SR FLIPFLOP:
+![Alt text](srdia.png)
+JK FLIPFLOP:
+![Alt text](jkdia.png)
+D FLIPFLOP:
+![Alt text](ddia.png)
+T FLIPFLOP:
+![Alt text](tdia.png)
 
 
 ### RESULTS 
+
+Thus implementation of flipflops is completed successfully.
